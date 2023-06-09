@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="frmCalculArea">
+        <h1>triángulos</h1>
+        <p>
+            <input type="number" name="Ladoa" id="Ladoa" placeholder="lado a" onblur="captura1()">
+            <br>
+            <br>
+            <input type="number" name="Ladob" id="Ladob" placeholder="lado b" onblur="captura2() ">
+            <br>
+            <br>
+            <input type="number" name="Ladoc" id="Ladoc" placeholder="lado c" onblur="captura3() ">
+        </p>
+        <p>
+            <button onclick="Semi(),Semiperimetro()">perimetro</button>
+            <button onclick="Area(),Areas()">Área</button>
+            <button onclick="Calcular()">Tipo</button>
+        </p>
+        <input type="button" value="DEL" id="clearDEL" />
+
+        <ul id="Lista">
+
+        </ul>
+    </div>
+    <script src="js/funcion.js"></script>
+</body>
+
+</html>
